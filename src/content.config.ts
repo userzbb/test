@@ -15,18 +15,7 @@ const blog = defineCollection({
 
 });
 
-const countries = defineCollection({
-  loader: async () => {
-    const response = await fetch("https://restcountries.com/v3.1/all");
-    const data = await response.json();
-    // 必须返回具有 id 属性的条目数组，或以 ID 作为键、条目作为值的对象
-    return data.map((country) => ({
-      id: country.cca3,
-      ...country,
-    }));
-  },
 
-});
 
 
 const probes = defineCollection({
