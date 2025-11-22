@@ -24,7 +24,7 @@ tags: ["astro", "blogging", "learning in public"]
  2. **制作页面**：然后我学习了如何通过创建新的 `.astro` 文件并将它们保存在 `src/pages/` 文件夹里来制作页面。
     - 使用layouts简化代码
     - 编写MySiteLayout.astro
-        ```HTML
+        ```html
         ---
         interface Props {
         title?: string;
