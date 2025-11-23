@@ -2,11 +2,12 @@
 // 1. `frontmatter` prop 提供了访问 frontmatter 和其他数据的能力
 const { frontmatter } = Astro.props;
 ---
+
 <html>
   <head>
     <!-- 添加其他 Head 元素，例如样式和 meta 标签。 -->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8" />
     <title>{frontmatter.title}</title>
   </head>
   <body>
